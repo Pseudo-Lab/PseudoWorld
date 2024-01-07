@@ -2,5 +2,8 @@
 
 Pseudo-Lab Community Site Project
 
-React + Vite
-Django + 
+## Frontend
+React + Typescript + Vite
+Node.js v20.9.0
+
+## API Server
