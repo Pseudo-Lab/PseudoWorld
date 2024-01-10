@@ -1,29 +1,26 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 
 const Header = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{ flexGrow: 1, textAlign: "left" }}
+        >
           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-            My Community
+            PseudoLab
           </Link>
         </Typography>
         <Button color="inherit">
-          <Link
-            to="/posts"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
+          <Link to="/test" style={{ textDecoration: "none", color: "inherit" }}>
             Posts
           </Link>
         </Button>
         <Button color="inherit">
-          <Link
-            to="/about"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
+          <Link to="/game" style={{ textDecoration: "none", color: "inherit" }}>
             About
           </Link>
         </Button>
