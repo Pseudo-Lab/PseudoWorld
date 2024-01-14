@@ -1,6 +1,6 @@
 import { AppBar, Box, Container, Toolbar, Button } from "@mui/material";
 import { styled } from "@mui/system";
-import LogoImage from "../components/LogoImage";
+import LogoImage from "../components/Common/LogoImage";
 
 const StyledAppBar = styled(AppBar)({
   backgroundColor: "#fff",

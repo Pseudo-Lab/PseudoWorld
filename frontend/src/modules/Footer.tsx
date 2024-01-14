@@ -1,15 +1,14 @@
 // import { Link } from "react-router-dom";
 import { Box, Grid, Container, Typography } from "@mui/material";
-import LogoImage from "../components/LogoImage";
-import HorizonLine from "../components/HorizonLine";
+import LogoImage from "../components/Common/LogoImage";
+import HorizonLine from "../components/Common/HorizonLine";
 import { LinkedIn, GitHub } from "@mui/icons-material";
-import ExternalLink from "../components/ExternalLink";
+import ExternalLink from "../components/Common/ExternalLink";
 
 const Footer = () => {
   return (
     <Box
       sx={{
-        width: "100%",
         py: 3,
       }}
       component="footer"

@@ -1,5 +1,5 @@
 import { styled } from "@mui/system";
-import pseudoLabLogo from "../assets/pseudo-lab-logo.svg";
+import pseudoLabLogo from "../../assets/pseudo-lab-logo.svg";
 import { Link } from "react-router-dom";
 
 type LogoImageProps = {
