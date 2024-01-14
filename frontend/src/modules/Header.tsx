@@ -1,15 +1,7 @@
-import { AppBar, Box, Container, Toolbar, Button } from "@mui/material";
+import React from "react";
+import { Box, Container, Toolbar, Button } from "@mui/material";
 import { styled } from "@mui/system";
-import LogoImage from "../components/Common/LogoImage";
-
-const StyledAppBar = styled(AppBar)({
-  backgroundColor: "#fff",
-});
-
-const StyledToolbar = styled(Toolbar)({
-  color: "#000",
-  justifyContent: "space-between",
-});
+import PseudoLabLogo from "../components/Common/PseudoLabLogo";
 
 const LoginButton = styled(Button)({
   marginLeft: "auto",
@@ -17,10 +9,10 @@ const LoginButton = styled(Button)({
 
 const Header = () => {
   return (
-    <StyledAppBar position="fixed">
+    <React.Fragment>
       <Container>
-        <StyledToolbar>
-          <LogoImage
+        <Toolbar sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <PseudoLabLogo
             maxWidth="100px"
             height="auto"
             marginRight="50px" // 이미지와 텍스트 사이에 간격을 조절
@@ -42,9 +34,9 @@ const Header = () => {
           <Button color="inherit" href="/About">
             관리자
           </Button>
-        </StyledToolbar>
+        </Toolbar>
       </Container>
-    </StyledAppBar>
+    </React.Fragment>
   );
 };
 

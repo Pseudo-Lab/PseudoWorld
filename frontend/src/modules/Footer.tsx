@@ -1,7 +1,6 @@
 // import { Link } from "react-router-dom";
 import { Box, Grid, Container, Typography } from "@mui/material";
-import LogoImage from "../components/Common/LogoImage";
-import HorizonLine from "../components/Common/HorizonLine";
+import PseudoLabLogo from "../components/Common/PseudoLabLogo";
 import { LinkedIn, GitHub } from "@mui/icons-material";
 import ExternalLink from "../components/Common/ExternalLink";
 
@@ -9,25 +8,16 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        width: "100%",
-        position: "absolute",
-        right: 0,
-        left: 0,
-        marginTop: "10px",
-        borderTop: "1px solid #e0e0e0",
         py: 2,
+        marginTop: "2rem",
+        borderTop: 1,
+        borderColor: "divider",
       }}
-      bgcolor="background.paper"
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      component="footer"
     >
-      {/* <HorizonLine /> */}
-      <Container>
-        <Grid container spacing={12}>
+      <Container maxWidth="lg">
+        <Grid container spacing={1}>
           <Grid item xs={12} sm={6} md={6}>
-            <LogoImage
+            <PseudoLabLogo
               maxWidth="100px"
               height="auto"
               marginRight="8px" // 이미지와 텍스트 사이에 간격을 조절
