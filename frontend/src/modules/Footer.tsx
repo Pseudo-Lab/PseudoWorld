@@ -9,8 +9,10 @@ const Footer = () => {
     <Box
       sx={{
         py: 2,
+        marginTop: "2rem",
+        borderTop: 1,
+        borderColor: "divider",
       }}
-      borderTop={{ borderBottom: 1, borderColor: "divider" }}
     >
       <Container maxWidth="lg">
         <Grid container spacing={1}>

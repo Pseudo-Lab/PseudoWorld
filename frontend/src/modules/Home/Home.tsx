@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <StyledContainer>
       <MainBanner />
-      <PseudoLabLogo maxWidth="400px" height="auto" marginRight="auto" />
+      <PseudoLabLogo maxWidth="20rem" height="auto" marginRight="auto" />
       <Title>가짜연구소 (Pseudo Lab)</Title>
       <Description>
         <b>가짜연구소</b>는
