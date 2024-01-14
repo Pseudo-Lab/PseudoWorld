@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Toolbar, Button } from "@mui/material";
 import { styled } from "@mui/system";
-import PseudoLabLogo from "../components/Common/PseudoLabLogo";
+import PseudoLabLogo from "../components/common/PseudoLabLogo";
 
 const LoginButton = styled(Button)({
   marginLeft: "auto",
