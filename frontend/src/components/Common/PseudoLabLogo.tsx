@@ -8,7 +8,7 @@ type LogoImageProps = {
   marginRight: string;
 };
 
-const LogoImage = (props: LogoImageProps) => {
+const PseudoLabLogo = (props: LogoImageProps) => {
   const LogoImageStyle = styled("img")({
     maxWidth: props.maxWidth,
     height: props.height,
@@ -22,4 +22,4 @@ const LogoImage = (props: LogoImageProps) => {
   );
 };
 
-export default LogoImage;
+export default PseudoLabLogo;

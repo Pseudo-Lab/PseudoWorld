@@ -30,9 +30,9 @@ const MainBanner = () => {
     return () => clearInterval(intervalId); // 컴포넌트가 언마운트되면 interval 정리
   }, []);
 
-  const handleImageLoad = (event: any) => {
+  const handleImageLoad = (event: React.SyntheticEvent<HTMLImageElement>) => {
     setLoading(false);
-    setImageHeight(event.target.clientHeight);
+    setImageHeight((event.target as HTMLImageElement).clientHeight);
   };
 
   return (

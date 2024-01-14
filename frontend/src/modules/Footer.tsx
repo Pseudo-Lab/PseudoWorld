@@ -1,6 +1,6 @@
 // import { Link } from "react-router-dom";
 import { Box, Grid, Container, Typography } from "@mui/material";
-import LogoImage from "../components/Common/LogoImage";
+import PseudoLabLogo from "../components/Common/PseudoLabLogo";
 import { LinkedIn, GitHub } from "@mui/icons-material";
 import ExternalLink from "../components/Common/ExternalLink";
 
@@ -15,7 +15,7 @@ const Footer = () => {
       <Container maxWidth="lg">
         <Grid container spacing={1}>
           <Grid item xs={12} sm={6} md={6}>
-            <LogoImage
+            <PseudoLabLogo
               maxWidth="100px"
               height="auto"
               marginRight="8px" // 이미지와 텍스트 사이에 간격을 조절

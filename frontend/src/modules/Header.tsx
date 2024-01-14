@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Toolbar, Button } from "@mui/material";
 import { styled } from "@mui/system";
-import LogoImage from "../components/Common/LogoImage";
+import PseudoLabLogo from "../components/Common/PseudoLabLogo";
 
 const LoginButton = styled(Button)({
   marginLeft: "auto",
@@ -12,7 +12,7 @@ const Header = () => {
     <React.Fragment>
       <Container>
         <Toolbar sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <LogoImage
+          <PseudoLabLogo
             maxWidth="100px"
             height="auto"
             marginRight="50px" // 이미지와 텍스트 사이에 간격을 조절
