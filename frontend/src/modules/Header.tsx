@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Box, Container, Toolbar, Button } from "@mui/material";
+import { Box, Container, Toolbar, Button } from "@mui/material";
 import { styled } from "@mui/system";
 import LogoImage from "../components/Common/LogoImage";
 
