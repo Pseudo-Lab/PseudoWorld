@@ -1,15 +1,7 @@
+import React from "react";
 import { AppBar, Box, Container, Toolbar, Button } from "@mui/material";
 import { styled } from "@mui/system";
 import LogoImage from "../components/Common/LogoImage";
-
-const StyledAppBar = styled(AppBar)({
-  backgroundColor: "#fff",
-});
-
-const StyledToolbar = styled(Toolbar)({
-  color: "#000",
-  justifyContent: "space-between",
-});
 
 const LoginButton = styled(Button)({
   marginLeft: "auto",
@@ -17,9 +9,9 @@ const LoginButton = styled(Button)({
 
 const Header = () => {
   return (
-    <StyledAppBar position="fixed">
+    <React.Fragment>
       <Container>
-        <StyledToolbar>
+        <Toolbar sx={{ borderBottom: 1, borderColor: "divider" }}>
           <LogoImage
             maxWidth="100px"
             height="auto"
@@ -42,9 +34,9 @@ const Header = () => {
           <Button color="inherit" href="/About">
             관리자
           </Button>
-        </StyledToolbar>
+        </Toolbar>
       </Container>
-    </StyledAppBar>
+    </React.Fragment>
   );
 };
 

@@ -8,22 +8,12 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        width: "100%",
-        position: "absolute",
-        right: 0,
-        left: 0,
-        marginTop: "10px",
-        borderTop: "1px solid #e0e0e0",
         py: 2,
       }}
-      bgcolor="background.paper"
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      component="footer"
+      borderTop={{ borderBottom: 1, borderColor: "divider" }}
     >
-      <Container>
-        <Grid container spacing={12}>
+      <Container maxWidth="lg">
+        <Grid container spacing={1}>
           <Grid item xs={12} sm={6} md={6}>
             <LogoImage
               maxWidth="100px"
