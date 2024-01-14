@@ -1,7 +1,6 @@
 // import { Link } from "react-router-dom";
 import { Box, Grid, Container, Typography } from "@mui/material";
 import LogoImage from "../components/Common/LogoImage";
-import HorizonLine from "../components/Common/HorizonLine";
 import { LinkedIn, GitHub } from "@mui/icons-material";
 import ExternalLink from "../components/Common/ExternalLink";
 
@@ -23,7 +22,6 @@ const Footer = () => {
       alignItems="center"
       component="footer"
     >
-      {/* <HorizonLine /> */}
       <Container>
         <Grid container spacing={12}>
           <Grid item xs={12} sm={6} md={6}>
