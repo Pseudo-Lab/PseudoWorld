@@ -13,6 +13,7 @@ const Footer = () => {
         position: "absolute",
         right: 0,
         left: 0,
+        marginTop: "10px",
         borderTop: "1px solid #e0e0e0",
         py: 2,
       }}
