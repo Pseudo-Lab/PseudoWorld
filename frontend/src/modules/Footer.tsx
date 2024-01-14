@@ -2,64 +2,35 @@
 import { Box, Grid, Container, Typography } from "@mui/material";
 import LogoImage from "../components/LogoImage";
 import HorizonLine from "../components/HorizonLine";
+import { LinkedIn, GitHub } from "@mui/icons-material";
+import ExternalLink from "../components/ExternalLink";
 
 const Footer = () => {
   return (
     <Box
       sx={{
+        width: "100%",
         py: 3,
       }}
       component="footer"
     >
       <HorizonLine />
       <Container>
-        <Grid container spacing={20}>
-          <Grid item xs={12} sm={6} md={3}>
+        <Grid container spacing={12}>
+          <Grid item xs={12} sm={6} md={6}>
             <LogoImage
               maxWidth="100px"
               height="auto"
               marginRight="8px" // 이미지와 텍스트 사이에 간격을 조절
             />
           </Grid>
-          <Grid item xs={12} sm={4} md={3}>
-            <Typography variant="h6" gutterBottom>
-              Quick Links
-            </Typography>
-            {/* <Link href="#" color="inherit" variant="body2">
-              Home
-            </Link>
-            <br />
-            <Link href="#" color="inherit" variant="body2">
-              Features
-            </Link>
-            <br />
-            <Link href="#" color="inherit" variant="body2">
-              Contact
-            </Link> */}
-          </Grid>
-          <Grid item xs={12} sm={4} md={3}>
-            <Typography variant="h6" gutterBottom>
-              Resources
-            </Typography>
-            {/* <Link href="#" color="inherit" variant="body2">
-              Documentation
-            </Link>
-            <br />
-            <Link href="#" color="inherit" variant="body2">
-              Blog
-            </Link> */}
-          </Grid>
-          <Grid item xs={12} sm={4} md={3}>
-            <Typography variant="h6" gutterBottom>
-              Connect with Us
-            </Typography>
-            {/* <Link href="#" color="inherit" variant="body2">
-              Facebook
-            </Link>
-            <br />
-            <Link href="#" color="inherit" variant="body2">
-              Twitter
-            </Link> */}
+          <Grid item xs={12} sm={4} md={6} marginTop={4}>
+            <ExternalLink href="https://www.linkedin.com/company/pseudolab">
+              <LinkedIn />
+            </ExternalLink>
+            <ExternalLink href="https://github.com/Pseudo-Lab">
+              <GitHub />
+            </ExternalLink>
           </Grid>
         </Grid>
         <Box mt={3}>

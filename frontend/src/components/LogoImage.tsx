@@ -1,5 +1,6 @@
 import { styled } from "@mui/system";
 import pseudoLabLogo from "../assets/pseudo-lab-logo.svg";
+import { Link } from "react-router-dom";
 
 type LogoImageProps = {
   maxWidth: string;
@@ -14,7 +15,11 @@ const LogoImage = (props: LogoImageProps) => {
     marginRight: props.marginRight, // 이미지와 텍스트 사이에 간격을 조절
   });
 
-  return <LogoImageStyle src={pseudoLabLogo} alt="PseudoLab Logo" />;
+  return (
+    <Link to="/">
+      <LogoImageStyle src={pseudoLabLogo} alt="PseudoLab Logo"></LogoImageStyle>
+    </Link>
+  );
 };
 
 export default LogoImage;

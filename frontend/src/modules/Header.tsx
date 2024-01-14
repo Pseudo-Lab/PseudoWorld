@@ -1,61 +1,14 @@
-import {
-  AppBar,
-  Box,
-  Container,
-  Toolbar,
-  Typography,
-  Button,
-} from "@mui/material";
+import { AppBar, Box, Container, Toolbar, Button } from "@mui/material";
 import { styled } from "@mui/system";
 import LogoImage from "../components/LogoImage";
-
-// const Header = () => {
-//   return (
-//     <AppBar position="fixed">
-//       <Toolbar>
-//         <Typography
-//           variant="h6"
-//           component="div"
-//           sx={{ flexGrow: 1, textAlign: "left" }}
-//         >
-//           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-//             PseudoLab
-//           </Link>
-//         </Typography>
-//         <Button color="inherit">
-//           <Link to="/test" style={{ textDecoration: "none", color: "inherit" }}>
-//             Posts
-//           </Link>
-//         </Button>
-//         <Button color="inherit">
-//           <Link to="/game" style={{ textDecoration: "none", color: "inherit" }}>
-//             About
-//           </Link>
-//         </Button>
-//         {/* Add more navigation links as needed */}
-//       </Toolbar>
-//     </AppBar>
-//   );
-// };
 
 const StyledAppBar = styled(AppBar)({
   backgroundColor: "#fff",
 });
 
 const StyledToolbar = styled(Toolbar)({
-  display: "flex",
   color: "#000",
   justifyContent: "space-between",
-});
-
-const Logo = styled(Typography)({
-  textDecoration: "none",
-  fontWeight: "bold",
-});
-
-const NavLinkContainer = styled(Box)({
-  display: "flex",
-  gap: (theme) => theme.spacing(3),
 });
 
 const LoginButton = styled(Button)({
@@ -72,20 +25,23 @@ const Header = () => {
             height="auto"
             marginRight="50px" // 이미지와 텍스트 사이에 간격을 조절
           />
-          <NavLinkContainer>
-            <Button color="inherit" href="/">
-              Home
+          <Box>
+            <Button color="inherit" href="/Test">
+              커뮤니티
             </Button>
             <Button color="inherit" href="/Test">
-              Features
+              빌더
             </Button>
             <Button color="inherit" href="/About">
-              Contact
+              러너
             </Button>
-          </NavLinkContainer>
-          <LoginButton color="inherit" href="#">
-            Login
+          </Box>
+          <LoginButton variant="contained" color="inherit" href="#">
+            로그인
           </LoginButton>
+          <Button color="inherit" href="/About">
+            관리자
+          </Button>
         </StyledToolbar>
       </Container>
     </StyledAppBar>
