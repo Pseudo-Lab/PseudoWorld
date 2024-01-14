@@ -9,11 +9,20 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        py: 3,
+        width: "100%",
+        position: "absolute",
+        right: 0,
+        left: 0,
+        borderTop: "1px solid #e0e0e0",
+        py: 2,
       }}
+      bgcolor="background.paper"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
       component="footer"
     >
-      <HorizonLine />
+      {/* <HorizonLine /> */}
       <Container>
         <Grid container spacing={12}>
           <Grid item xs={12} sm={6} md={6}>
@@ -23,7 +32,7 @@ const Footer = () => {
               marginRight="8px" // 이미지와 텍스트 사이에 간격을 조절
             />
           </Grid>
-          <Grid item xs={12} sm={4} md={6} marginTop={4}>
+          <Grid item xs={12} sm={6} md={6} marginTop={4}>
             <ExternalLink href="https://www.linkedin.com/company/pseudolab">
               <LinkedIn />
             </ExternalLink>
