@@ -1,11 +1,7 @@
 import React from "react";
 import { Box, Container, Toolbar, Button } from "@mui/material";
-import { styled } from "@mui/system";
 import PseudoLabLogo from "../components/common/PseudoLabLogo";
-
-const LoginButton = styled(Button)({
-  marginLeft: "auto",
-});
+import DiscordLoginButton from "../components/common/DiscordLoginButton";
 
 const Header = () => {
   return (
@@ -27,13 +23,11 @@ const Header = () => {
             <Button color="inherit" href="/About">
               러너
             </Button>
+            {/* 권한에 따라 관리자 페이지 메뉴 추가 */}
           </Box>
-          <LoginButton variant="contained" color="inherit" href="#">
-            로그인
-          </LoginButton>
-          <Button color="inherit" href="/About">
-            관리자
-          </Button>
+          {/* 로그인 상태가 아니라면 */}
+          <DiscordLoginButton />
+          {/* 로그인 상태라면 프로필 얼굴 */}
         </Toolbar>
       </Container>
     </React.Fragment>
