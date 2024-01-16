@@ -2,6 +2,39 @@ import { Typography, Button } from "@mui/material";
 import DiscordIcon from "../../components/common/DiscordIcon";
 
 const DiscordLoginButton = () => {
+  const discordLogin = async () => {
+    const url: string = process.env.REACT_APP_DISCORD_LOGIN_URL;
+    const id: string = process.env.REACT_APP_DISCORD_CLIENT_ID;
+    const secret: string = process.env.REACT_APP_DISCORD_CLIENT_SECRET;
+    window.location.href = url;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get("code");
+
+    if (code) {
+      const data = {
+        client_id: id,
+        client_secret: secret,
+        grant_type: "authorization_code",
+        code: code,
+        redirect_uri: "http://localhost:3000/oauth/redirect",
+        scope: "identify, email",
+      };
+
+      const response = await fetch("https://discord.com/api/oauth2/token", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      });
+
+      const responseData = await response.json();
+
+      console.log(responseData.access_token); // Here is your access token
+    }
+  };
+
   return (
     <Button
       sx={{
@@ -14,6 +47,7 @@ const DiscordLoginButton = () => {
         padding: "8px 16px",
         marginLeft: "auto",
       }}
+      onClick={discordLogin}
     >
       <DiscordIcon className="h-6 w-6 mr-3" />
       <Typography marginLeft={1} textTransform={"none"}>
