@@ -3,10 +3,11 @@ import DiscordIcon from "../../components/common/DiscordIcon";
 
 const DiscordLoginButton = () => {
   const discordLogin = async () => {
-    const url: string = process.env.REACT_APP_DISCORD_LOGIN_URL;
-    const id: string = process.env.REACT_APP_DISCORD_CLIENT_ID;
-    const secret: string = process.env.REACT_APP_DISCORD_CLIENT_SECRET;
+    const url: string = import.meta.env.VITE_DISCORD_OAUTH2_URL;
+    const id: string = import.meta.env.VITE_DISCORD_CLIENT_ID;
+    const secret: string = import.meta.env.VITE_DISCORD_CLIENT_SECRET;
     window.location.href = url;
+    console.log(url);
 
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get("code");
