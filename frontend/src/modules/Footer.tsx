@@ -1,8 +1,8 @@
 // import { Link } from "react-router-dom";
 import { Box, Grid, Container, Typography } from "@mui/material";
-import PseudoLabLogo from "../components/Common/PseudoLabLogo";
+import PseudoLabLogo from "../components/common/PseudoLabLogo";
 import { LinkedIn, GitHub } from "@mui/icons-material";
-import ExternalLink from "../components/Common/ExternalLink";
+import ExternalLink from "../components/common/ExternalLink";
 
 const Footer = () => {
   return (

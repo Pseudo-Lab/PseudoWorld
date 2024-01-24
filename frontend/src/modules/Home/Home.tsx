@@ -1,6 +1,6 @@
-import MainBanner from "./Components/MainBanner";
+import MainBanner from "./components/MainBanner";
 import { Container, Typography, Theme } from "@mui/material";
-import PseudoLabLogo from "../../components/Common/PseudoLabLogo";
+import PseudoLabLogo from "../../components/common/PseudoLabLogo";
 import { styled } from "@mui/system";
 
 const StyledContainer = styled(Container)({
